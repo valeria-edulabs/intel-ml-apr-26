@@ -1,0 +1,5 @@
+id,temperature,location
+S1,20.5,lab
+S2,19.7,field
+S3,22.1,cleanroom
+S4,18.9,office
