@@ -3,7 +3,7 @@ numpy
 scipy
 pandas
 streamlit
-tensorflow
 plotly
 nbformat
 prophet
+scikit-learn

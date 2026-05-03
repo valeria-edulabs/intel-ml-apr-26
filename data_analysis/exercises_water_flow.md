@@ -11,14 +11,13 @@ Your goal is to clean, merge, and analyze this data to understand the system's b
 
 ## 0. Setup & Data Loading
 
-The data is hosted at the following URLs:
-- **Sensor S1**: [https://storage.googleapis.com/intel-ai/water-flow/S1.zip](https://storage.googleapis.com/intel-ai/water-flow/S1.zip)
-- **Sensor S2**: [https://storage.googleapis.com/intel-ai/water-flow/S2.zip](https://storage.googleapis.com/intel-ai/water-flow/S2.zip)
+The prepared August 2023 datasets are already available in the repository under `data/`:
+- **Sensor S1**: `data/s1_august_23.csv`
+- **Sensor S2**: `data/s2_august_23.csv`
 
 **Task:**
-1. Use `pd.read_csv()` to load the data directly from the URLs. 
-2. Note: Pandas can handle `.zip` files automatically!
-3. Load them into two DataFrames: `df_s1` and `df_s2`.
+1. Use `pd.read_csv()` to load `data/s1_august_23.csv` and `data/s2_august_23.csv`.
+2. Load them into two DataFrames: `df_s1` and `df_s2`.
 
 ---
 
@@ -48,12 +47,12 @@ Sensor data is often "noisy" or has gaps.
 
 ## 3. Data Optimization
 
-The original files are quite large. To make the analysis faster, we will focus only on a specific month.
+The August datasets are already prepared, so you can skip the filtering step and use the provided files directly.
 
 **Tasks:**
-- Filter both `df_s1` and `df_s2` to include only data from **August 2023**.
-- Save these filtered DataFrames to new CSV files (e.g., `s1_august.csv` and `s2_august.csv`).
-- **Restart your logic**: Load these two new CSVs and use them for the rest of the exercise.
+- Confirm that `df_s1` and `df_s2` contain only August 2023 data.
+- If you want, save cleaned versions back to CSV, but this is optional.
+- Continue using these two DataFrames for the rest of the exercise.
 
 ---
 
