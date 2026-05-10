@@ -7,3 +7,4 @@ plotly
 nbformat
 prophet
 scikit-learn
+xgboost
