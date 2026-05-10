@@ -140,6 +140,8 @@ m6 = TemperatureMeasurement(80.0, "2026-05-02 10:15")
 m7 = TemperatureMeasurement.from_fahrenheit(75.2, "2026-05-02 10:20")
 m8 = TemperatureMeasurement(100.0, "2026-05-02 10:25", quality="suspect")
 
+
+
 # Add measurements to sensors
 sensor_a.add_measurement(m1)
 sensor_a.add_measurement(m2)

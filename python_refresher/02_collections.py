@@ -2,6 +2,7 @@
 
 # Lists
 temperatures = [21.0, 22.5, 23.1, 20.8]
+print(temperatures[1])
 print("first temp:", temperatures[0])
 print("slice:", temperatures[1:3])
 temperatures.append(24.0)
@@ -11,6 +12,13 @@ print("after append:", temperatures)
 point = (10, 20)
 x, y = point
 print("tuple unpack:", x, y)
+
+text = "sun"
+print(text.upper())
+print("sun" + "cloud")
+i = 0
+while i < 5:
+    i +=1
 
 # Sets
 tags = {"sensor", "temperature", "outdoor"}
@@ -43,8 +51,12 @@ print("nested list:", nested_list)
 print("first inner list second value:", nested_list[0][1])
 
 nested_dict = {
-    "S001": {"location": "lab", "readings": [21.0, 22.5]},
-    "S002": {"location": "field", "readings": [19.8, 20.2]},
+    "S001": {
+        "location": "lab", 
+        "readings": [21.0, 22.5]},
+    "S002": {
+        "location": "field", 
+        "readings": [19.8, 20.2]},
 }
 print("nested dict:", nested_dict)
 print("S001 readings:", nested_dict["S001"]["readings"])

@@ -1,15 +1,19 @@
 """Python refresher: core basics."""
 
+
 # Variables and values
 count = 3
 price = 12.50
 name = "sensor"
 is_active = True
 
+
+
 print("count:", count)
 print("price:", price)
 print("name:", name)
 print("active:", is_active)
+
 
 # Type conversion
 value = "42"

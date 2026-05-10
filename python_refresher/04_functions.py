@@ -16,12 +16,14 @@ print(power(status="on", level=3))
 
 # *args and **kwargs
 def summarize(name, *values, **options):
-    total = sum(values)
-    label = options.get("label", name)
-    return f"{label}: {total} (count={len(values)})"
+    # total = sum(values)
+    # label = options.get("label", name)
+    # return f"{label}: {total} (count={len(values)})"
+    print(values)
+    print(options)
 
 print(summarize("temps", 21.2, 22.0, 23.5))
-print(summarize("temps", 21.2, 22.0, label="three temps"))
+print(summarize("temps", 21.2, 22.0, label="three temps", number=5))
 
 # Lambda expression
 double = lambda x: x * 2
